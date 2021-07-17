@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MySQL-Note</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="Description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+
+	<!-- 侧边栏折叠 -->
+	<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" /> -->
+
+</head>
+<body>
+	<div id="app"></div>
+	<script>
+		window.$docsify = {
+
+			// 侧边栏，创建_sidebar.md
+			loadSidebar: true,
+			subMaxLevel: 5,
+			sidebarDisplayLevel: 5,
+			maxLevel: 5,
+			coverpage: true,
+			// 只在访问主页时加载封面
+			onlyCover: true,
+			// 切换页面后是否自动跳转到页面顶部。
+			auto2top: true,    
+			topMargin: 50, // default: 0
+			// logo: 'favicon.ico',
+		    name: 'MySQL-Note',
+		    repo: 'https://github.com/ixfosa/mysql-note',
+		    isExpected: true,
+
+    		// 页面右侧toc
+	        // toc: {
+	        //     tocMaxLevel: 6,
+	        //     target: "h2, h3, h4, h5, h6",
+	        // },
+
+        	
+        	// 全文搜索
+	        search: {
+		        depth: 6,
+		        noData: "没有搜到!",
+		        placeholder: "搜索...",
+		        // 避免搜索索引冲突,同一域下的多个网站之间
+		        namespace: "website-1",
+	        },
+
+	    	// 分页 
+		    pagination: {
+			    previousText: '上一章节',
+			    nextText: '下一章节',
+			    crossChapter: true,
+			    crossChapterText: true,
+		  	},
+
+  			// copy
+		  	copyCode: {
+			    buttonText : 'Copy to clipboard',
+			    errorText  : 'Error',
+			    successText: 'Copied'
+		    },
+
+	    	// 字数统计
+		    count:{
+			    countable:true,
+			    fontsize:'0.9em',
+			    color:'rgb(90,90,90)',
+			    language:'chinese'
+		  	}
+		}
+	</script>
+
+	<!-- Docsify v4 -->
+	<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+	<!-- 分页 -->
+	<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+	<!-- copy -->
+	<script src="https://unpkg.com/docsify-copy-code"></script>
+	<!-- 字数统计 -->
+	<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+	<!-- 代码高亮  https://cdn.jsdelivr.net/npm/prismjs@1/components/ -->
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>	
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-cmake.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-csharp.min.js"></script>     
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-docker.min.js"></script>  
+	<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-powershell.min.js"></script>  
+	<!-- 全文搜索 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+    <!-- 侧边栏目录折叠 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+     <!-- 页面右侧 TOC -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.1.0/dist/docsify-plugin-toc.min.js"></script> -->
+
+</body>
+</html>
