@@ -1,5 +1,7 @@
-+ [MySQL 介绍和安装](notes/01-MySQL介绍和安装)
-+ 
++ [MySQL ](notes/MySQL)
 
++ [Redis](notes/Redis)
 
++ [MongoDB](notes/MongoDB)
 
++ 待完善整理
